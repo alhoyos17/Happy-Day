@@ -1,0 +1,371 @@
+/*==================================================
+    PARA MI DISEÑADORA ❤️
+    style.css
+==================================================*/
+
+/*=========================
+        VARIABLES
+==========================*/
+
+:root{
+
+    --background:#090512;
+    --background2:#130A26;
+
+    --primary:#7B3FF2;
+    --primary-light:#B28DFF;
+
+    --secondary:#FF84E8;
+
+    --white:#FFFFFF;
+    --text:#E7E7E7;
+    --gray:#BDBDBD;
+
+    --glass:rgba(255,255,255,.06);
+
+    --radius:18px;
+
+    --shadow:0px 0px 60px rgba(123,63,242,.25);
+
+}
+
+
+/*=========================
+        RESET
+==========================*/
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:
+    radial-gradient(circle at top,#241044 0%,#130A26 40%,#090512 100%);
+
+    color:var(--text);
+
+    font-family:'Inter',sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+
+/*=========================
+        BACKGROUND
+==========================*/
+
+#background{
+
+    position:fixed;
+
+    width:100%;
+    height:100%;
+
+    top:0;
+    left:0;
+
+    z-index:-2;
+
+    background:
+
+    radial-gradient(circle at 20% 20%,
+    rgba(123,63,242,.25),
+    transparent 35%),
+
+
+    radial-gradient(circle at 80% 30%,
+    rgba(255,132,232,.15),
+    transparent 35%),
+
+
+    radial-gradient(circle at 50% 100%,
+    rgba(123,63,242,.18),
+    transparent 40%);
+
+}
+
+
+/*=========================
+      CURSOR GLOW
+==========================*/
+
+#cursorGlow{
+
+    width:250px;
+    height:250px;
+
+    position:fixed;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    background:radial-gradient(circle,
+    rgba(123,63,242,.25),
+    transparent 70%);
+
+    transform:translate(-50%,-50%);
+
+    z-index:-1;
+
+    transition:
+
+    left .15s linear,
+    top .15s linear;
+
+}
+
+
+/*=========================
+        HERO
+==========================*/
+
+.hero{
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+
+.tag{
+
+    color:var(--secondary);
+
+    font-size:.9rem;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    margin-bottom:25px;
+
+}
+
+
+.hero h1{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:4.5rem;
+
+    font-weight:700;
+
+    line-height:1.1;
+
+    color:white;
+
+}
+
+
+.hero h2{
+
+    margin-top:35px;
+
+    max-width:700px;
+
+    line-height:1.8;
+
+    font-weight:300;
+
+    color:var(--gray);
+
+    font-size:1.2rem;
+
+}
+
+
+/*=========================
+        BUTTON
+==========================*/
+
+#startButton{
+
+    margin-top:60px;
+
+    padding:18px 45px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    background:linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary));
+
+    color:white;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:var(--shadow);
+
+}
+
+#startButton:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+
+    0px 0px 60px rgba(123,63,242,.55);
+
+}
+
+
+/*=========================
+        MUSIC
+==========================*/
+
+#musicButton{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:60px;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--glass);
+
+    backdrop-filter:blur(12px);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:1.3rem;
+
+    transition:.3s;
+
+}
+
+#musicButton:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+/*=========================
+        ANIMATION
+==========================*/
+
+.hero>*{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    animation:fadeUp .9s forwards;
+
+}
+
+.hero p{
+
+    animation-delay:.2s;
+
+}
+
+.hero h1{
+
+    animation-delay:.5s;
+
+}
+
+.hero h2{
+
+    animation-delay:.9s;
+
+}
+
+.hero button{
+
+    animation-delay:1.2s;
+
+}
+
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+
+/*=========================
+        RESPONSIVE
+==========================*/
+
+@media(max-width:900px){
+
+.hero h1{
+
+    font-size:3rem;
+
+}
+
+.hero h2{
+
+    font-size:1rem;
+
+}
+
+#startButton{
+
+    width:90%;
+
+}
+
+}

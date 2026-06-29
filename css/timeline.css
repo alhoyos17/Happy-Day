@@ -1,0 +1,224 @@
+.timeline-page{
+
+    width:100%;
+    min-height:100vh;
+
+    padding:120px 10%;
+
+}
+
+.title{
+
+    text-align:center;
+
+    margin-bottom:120px;
+
+}
+
+.title span{
+
+    color:#B28DFF;
+
+    letter-spacing:6px;
+
+}
+
+.title h1{
+
+    margin-top:20px;
+
+    font-size:3.5rem;
+
+    color:white;
+
+}
+
+.title p{
+
+    margin-top:25px;
+
+    color:#CFCFCF;
+
+}
+
+.timeline{
+
+    position:relative;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.line{
+
+    position:absolute;
+
+    left:50%;
+
+    width:4px;
+
+    height:100%;
+
+    background:linear-gradient(#6F3FF5,#D55FFF);
+
+    transform:translateX(-50%);
+
+    border-radius:10px;
+
+}
+
+.step{
+
+    width:50%;
+
+    position:relative;
+
+    margin-bottom:120px;
+
+}
+
+.left{
+
+    padding-right:60px;
+
+}
+
+.right{
+
+    margin-left:50%;
+
+    padding-left:60px;
+
+}
+
+.dot{
+
+    position:absolute;
+
+    width:100px;
+
+    height:100px;
+
+    background:#B28DFF;
+
+    border-radius:50%;
+
+    top:35px;
+
+    right:-12px;
+
+    box-shadow:0 0 30px #6F3FF5;
+
+}
+
+.right .dot{
+
+    left:-12px;
+
+}
+
+.card{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card img{
+
+    width:100%;
+
+    display:block;
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+.card small{
+
+    display:block;
+
+    color:#B28DFF;
+
+    padding:25px 30px 10px;
+
+}
+
+.card h2{
+
+    color:white;
+
+    padding:0 30px;
+
+}
+
+.card p{
+
+    color:#CFCFCF;
+
+    line-height:1.8;
+
+    padding:20px 30px 30px;
+
+}
+
+.special{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    min-height:260px;
+
+    background:linear-gradient(135deg,#6F3FF5,#B84CFF);
+
+}
+
+#nextPage{
+
+    display:block;
+
+    margin:80px auto;
+
+    padding:18px 45px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#7B3FF2;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+#nextPage:hover{
+
+    transform:translateY(-5px);
+
+}

@@ -1,0 +1,87 @@
+body{
+
+    margin:0;
+
+    overflow:hidden;
+
+    background:#07040F;
+
+    font-family:Poppins,sans-serif;
+
+}
+
+canvas{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+#messageContainer{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    transition:2s;
+
+    z-index:20;
+
+}
+
+#message{
+
+    color:white;
+
+    font-size:3rem;
+
+    width:900px;
+
+    max-width:90%;
+
+    text-align:center;
+
+    line-height:1.5;
+
+}
+
+#restart{
+
+    margin-top:60px;
+
+    padding:18px 45px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#7B3FF2;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+#restart:hover{
+
+    transform:scale(1.05);
+
+}
